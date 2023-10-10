@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Fragments.ConfiguracionFragment">
+
+    <ScrollView
+        android:id="@+id/scrlPideCobro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <View
+        android:id="@+id/punto_medio"
+        android:layout_width="8dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/txt_subtitulo"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Capturistas"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_label_24"
+        />
+    <TextView
+        android:id="@+id/txt_censista"
+        android:layout_below="@+id/txt_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="Censista"
+        android:textSize="12sp" />
+    <Spinner
+        android:id="@+id/sp_censistas"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/txt_censista"
+        />
+
+        <View android:id="@+id/separador6s"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"/>
+    <TextView
+        android:id="@+id/txt_subtitulo3"
+        android:layout_below="@+id/sp_censistas"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Rutas"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_label_24"
+        />
+    <Button
+        android:id="@+id/btn_guardarRutas"
+        android:layout_below="@+id/txt_subtitulo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Exportar Rutas"
+        android:textColor="@color/white"
+
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Spinner
+                android:id="@+id/sp_borrar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/btn_borrarRutas"
+                tools:ignore="SpeakableTextPresentCheck"
+                >
+            </Spinner>
+            <ImageButton
+                android:id="@+id/btn_borrarRutas"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_delete_24"
+                app:tint="@color/colorError"
+                tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/lbl_WCF"
+            android:drawableStart="@drawable/ic_label_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/direcci_n_del_servicio_wcf"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:id="@+id/tvBorraasdssOt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/escribe_la_direccion_del_servicio"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/et_DireccionWcf"
+                style="@style/Widget.Group.Single"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/btn_guarda_wcf"
+                android:autofillHints="Direccion wcf"
+                android:inputType="textMultiLine"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_guarda_wcf"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_done_24"
+                app:tint="@color/ColorCorrecto"
+                tools:ignore="ImageContrastCheck" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lbl_tools"
+            android:drawableStart="@drawable/ic_label_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/herramientas_de_apoyo"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text"
+            />
+
+        <Switch
+            android:id="@+id/sw_MuestraOcultaMenuLateral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:drawableStart="@drawable/ic_menu_open_24"
+            android:drawablePadding="8dp"
+            android:minHeight="48dp"
+            android:text="@string/mostrar_men_lateral_de_apoyo"
+            android:textColor="#484848"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textSize="17sp" />
+
+        <View android:id="@+id/separador6"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"/>
+
+        <TextView
+            android:id="@+id/lbl_permisos"
+            android:drawableStart="@drawable/ic_label_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/permisos"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text"
+            />
+
+
+        <Switch
+            android:id="@+id/sw_PermiteDescargarCatalogos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:drawableStart="@drawable/ic_cached_24"
+            android:drawablePadding="8dp"
+            android:minHeight="48dp"
+            android:text="@string/permitir_descargar_catalogos_al_responsable_de_brigada"
+            android:textColor="#484848"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textSize="17sp" />
+
+        <Switch
+            android:id="@+id/sw_PermiteDescargarOrdenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:drawableStart="@drawable/ic_file_download_24"
+            android:drawablePadding="8dp"
+            android:minHeight="48dp"
+            android:text="@string/permitir_descargar_rdenes_al_responsable_de_brigada"
+            android:textColor="#484848"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textSize="17sp" />
+
+        <Switch
+            android:id="@+id/sw_PermiteSubirOrdenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:drawableStart="@drawable/ic_file_upload_24"
+            android:drawablePadding="8dp"
+            android:minHeight="48dp"
+            android:text="@string/permitir_subir_rdenes_al_responsable_de_brigada"
+            android:textColor="#484848"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

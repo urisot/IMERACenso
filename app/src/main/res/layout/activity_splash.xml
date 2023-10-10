@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_fedat"
+    tools:context=".ui.Activities.SplashActivity">
+
+    <ImageView
+        android:id="@+id/marca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/marca_agua_fa_blanco"
+        android:layout_marginStart="-450dp"
+        android:layout_marginTop="-450dp"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-450dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/fullscreen_content"
+        android:layout_centerInParent="true"
+        android:layout_width="212dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo_federal"
+        android:contentDescription="@string/todo"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text="@string/comapa_derechos_res"
+        tools:ignore="SmallSp" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_listado_rutas"
+            android:icon="@drawable/ic_checklist_24"
+            android:title="@string/menu_lista_usuarios" />
+
+        <item
+            android:id="@+id/nav_descargar_rutas"
+            android:icon="@drawable/ic_file_download_24"
+            android:title="@string/menu_descargar_rutas" />
+
+        <item
+            android:id="@+id/nav_subir_rutas"
+            android:icon="@drawable/ic_file_upload_24"
+            android:title="@string/menu_subir_rutas" />
+
+        <item
+            android:id="@+id/nav_catalogos"
+            android:icon="@drawable/ic_cached_24"
+            android:title="@string/menu_catalogos" />
+
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/ic_settings_24"
+            android:title="@string/menu_configuracion" />
+    </group>
+</menu>

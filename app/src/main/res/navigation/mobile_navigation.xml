@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_listado_rutas">
+
+    <fragment
+        android:id="@+id/nav_listado_rutas"
+        android:name="com.imera.censo.ui.Fragments.ListadoRutasFragment"
+        android:label="@string/menu_lista_usuarios"
+        tools:layout="@layout/fragment_listado_rutas" />
+
+    <fragment
+        android:id="@+id/nav_descargar_rutas"
+        android:name="com.imera.censo.ui.Fragments.DescargarRutasFragment"
+        android:label="@string/menu_descargar_rutas"
+        tools:layout="@layout/fragment_descargar_rutas" />
+
+    <fragment
+        android:id="@+id/nav_subir_rutas"
+        android:name="com.imera.censo.ui.Fragments.SubirRutasCapturadasFragment"
+        android:label="@string/menu_subir_rutas"
+        tools:layout="@layout/fragment_subir_rutas_capturadas" />
+
+    <fragment
+        android:id="@+id/nav_catalogos"
+        android:name="com.imera.censo.ui.Fragments.CatalogosFragment"
+        android:label="@string/menu_catalogos"
+        tools:layout="@layout/fragment_catalogos" />
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.imera.censo.ui.Fragments.ConfiguracionFragment"
+        android:label="@string/menu_configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+</navigation>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivCerrar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:contentDescription="si"
+        android:elevation="5dp"
+        app:srcCompat="@drawable/ic_close_dialog" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMensajePopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        >
+        <TextView
+            android:drawablePadding="8dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/no_se_puede_establecer_conexi_n_con_el_servidor"
+            android:textSize="23sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/accent_color"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/lbl_WCF"
+            android:drawableStart="@drawable/ic_label_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/direccion_del_servicio_wcf"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text"
+            />
+
+     <!--   <TextView
+            android:id="@+id/tvBorraasdssOt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Escribe la direccion del servicio"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/et_DireccionWcf"
+                style="@style/Widget.Group.Single"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="4dp"
+                android:inputType="textMultiLine"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/btn_guarda_wcf"
+                android:layout_centerVertical="true"
+                android:background="@drawable/cuadro_texto1"
+                android:autofillHints="Direccion wcf" />
+
+            <ImageButton
+                android:id="@+id/btn_guarda_wcf"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_done_24"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="todo"
+                app:tint="@color/ColorCorrecto" />
+
+        </RelativeLayout>
+
+        <View android:id="@+id/separador5"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="37dp"
+        android:padding="25dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="Si"
+        android:elevation="5dp"
+        app:srcCompat="@drawable/ic_cloud_off" />
+
+</RelativeLayout>

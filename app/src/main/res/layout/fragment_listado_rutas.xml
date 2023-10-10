@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragments.ListadoRutasFragment">
+
+    <LinearLayout
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:weightSum="9"
+        android:orientation="horizontal"
+        android:background="@color/accent_color"
+        >
+        <Button
+            android:id="@+id/btn_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="PENDIENTES"
+            android:layout_weight="3"
+            android:background="@drawable/btn_tabhost"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="CENSADOS"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_tabhost"
+            />
+        <Button
+            android:id="@+id/btn_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="TODOS"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_tabhost"
+            />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_DetallesRutas"
+        android:layout_below="@+id/tabhost"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <ListView
+                android:id="@+id/lv_avances_ruta"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginTop="-100dp"
+                android:id="@+id/img_no_data"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_inbox"
+                android:gravity="center"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_no_data"
+                android:layout_below="@+id/img_no_data"
+                android:gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No hay rutas en el dispositivo, haga clic aquí para cargar."
+                android:enabled="false"
+                android:textSize="14sp"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/buttonFloat"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_create_24"
+                android:tint="@color/white"
+                app:backgroundTint="@color/accent_color"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

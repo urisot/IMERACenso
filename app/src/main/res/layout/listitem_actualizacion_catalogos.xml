@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+
+    >
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_cached_24"
+        android:background="?android:attr/selectableItemBackground"
+         />
+    <TextView
+        android:id="@+id/txt_texto"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/img_menu"
+        android:layout_toStartOf="@+id/img_done"
+        android:background="?android:attr/selectableItemBackground"
+        />
+    <ImageView
+        android:id="@+id/img_done"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_done_24"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+
+        />
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:theme="@style/CircularProgress"
+        android:id="@+id/pb_estado_actualizacion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/img_error"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_error_24"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txt_fecha_actualizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:layout_toStartOf="@+id/img_done"
+        />
+
+</RelativeLayout>

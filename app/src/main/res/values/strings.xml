@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">IMERA Censo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_lista_usuarios">Lista de Rutas</string>
+    <string name="menu_descargar_rutas">Descargar Rutas</string>
+    <string name="menu_subir_rutas">Subir Rutas</string>
+    <string name="menu_catalogos">Catálogos</string>
+    <string name="menu_configuracion">Configuración</string>
+
+
+    <!--       Tablas       -->
+    <string name="cat_causas_no_ejecucion">Cat_CausasNoEjecucion</string>
+    <string name="opr_usuarios">OPR_USUARIOS</string>
+    <string name="opr_materiales">Opr_Materiales</string>
+    <string name="opr_det_materiales">Opr_DetMateriales</string>
+    <string name="cfg_columnas">Cfg_Columnas</string>
+    <string name="cat_anomalias">Cat_Anomalias</string>
+    <string name="cat_diametros">Cat_Diametros</string>
+    <string name="cat_marcas">Cat_Marcas</string>
+    <string name="cat_materiales">Cat_Materiales</string>
+    <string name="cat_materialtoma">Cat_MaterialToma</string>
+    <string name="cat_modelos">Cat_Modelos</string>
+    <string name="cat_servicios">Cat_Servicios</string>
+    <string name="cat_colonias">Cat_Colonias</string>
+    <string name="cat_tiposglobo">Cat_TiposGlobo</string>
+    <string name="cat_tipostoma">Cat_TiposToma</string>
+    <string name="cat_tipocasa">Cat_TipoCasa</string>
+    <string name="cat_tiposusuario">Cat_TiposUsuario</string>
+    <string name="cat_calles">Cat_Calles</string>
+    <string name="cat_giros">Cat_Giros</string>
+    <string name="cat_censistas">Cat_Censistas</string>
+    <string name="cat_articulos">Cat_Articulos</string>
+    <string name="cat_brigadistas">Cat_Brigadistas</string>
+    <string name="cat_capturistas">Cat_Capturistas</string>
+    <string name="cat_condicionpredio">Cat_CondicionPredio</string>
+    <string name="cat_situaciontoma">Cat_SituacionesToma</string>
+    <string name="cat_tiposcorte">Cat_TiposCorte</string>
+    <string name="cat_tiposmulta">Cat_TiposMulta</string>
+    <string name="cat_trabajos">Cat_Trabajos</string>
+    <string name="sys_usuarios">Sys_Usuarios</string>
+    <string name="cfg_parametro">Cfg_Parametros</string>
+    <!--       parametros bd       -->
+    <string name="parametro_muestra_menu_lateral">MUESTRA_MENU_LATERAL</string>
+    <string name="parametro_captura_censo_online">CAPTURA_CENSO_ONLINE</string>
+    <string name="parametro_permite_descargar_censo">PERMITE_DESCARGAR_CENSO</string>
+    <string name="parametro_permite_subir_censo">PERMITE_SUBIR_CENSO</string>
+    <string name="parametro_permite_eliminar">PERMITE_ELIMINAR</string>
+    <string name="parametro_descargar_orden">DESCARGAR_ONLINE</string>
+    <string name="parametro_permite_descargar_catalogos">PERMITE_DESCARGAR_CATALOGOS</string>
+    <string name="parametro_brigadista_default">BRIGADISTA_DEFAULT</string>
+    <!--    <string name="parametro_permite_cancelar_orden">PERMITE_CANCELAR_ORDEN</string>-->
+    <string name="parametro_direccion_wcf">DIRECION_WCF</string>
+    <string name="parametro_autolocalizacion">AUTOLOCALIZACION</string>
+    <string name="parametro_tiempo_espera">TIEMPO_ESPERA</string>
+    <string name="parametro_listado_ordenes_agrupadas">LISTADO_ORDENES_AGRUPADAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="GV_DN">192.168.0.107</string>
+    <string name="numbre_paquete">com.imera.censo</string>
+    <string name="parametro_key_wcf">KEY_WCF</string>
+    <string name="notifica_actualiza_catalogo">El Catalogo %s ha sido Actualizado.</string>
+    <string name="esta_operacion_requiere_iniciar_sesion">Esta operación requiere que inicie sesión en modo administrador, para que se otorguen los permisos correspondientes</string>
+    <string name="a_ocurrido_un_problema">Ha ocurrido un problema</string>
+    <string name="aceptar">Aceptar</string>
+    <string-array name="factibilidad_tecnica">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string name="modo_admin">Modo Administrador</string>
+    <string name="preferences">Preferences</string>
+    <string name="pref_usuario">usuario</string>
+    <string name="error_escriba_su_usuario">¡ERROR!: Escriba su Usuario.</string>
+    <string name="error_escriba_su_contrasena">¡ERROR!: Escriba su Contraseña.</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="cerro_sesion_correctamente">Cerro sesión correctamente</string>
+    <string name="no_se_puede_establecer_conexi_n_con_el_servidor">No se puede establecer conexión con el servidor</string>
+    <string name="direccion_del_servicio_wcf">Dirección del servicio WCF</string>
+    <string name="error_campo_no_puede_ir_vacio">¡ERROR!: El campo no puede quedar vacio.</string>
+    <string name="error_debe_terminar_en">¡ERROR!: La dirección del servicio WCF debe terminar en /</string>
+    <string name="msj_actualizo_wcf_con_exito">Se actualizo la dirección WCF con Exito. \nEs necesario cerrar y volver abril la aplicación para que los cambios surtan efecto.</string>
+    <string name="direcci_n_del_servicio_wcf">Dirección del servicio WCF</string>
+    <string name="escribe_la_direccion_del_servicio">Escribe la dirección del servicio</string>
+    <string name="herramientas_de_apoyo">Herramientas de apoyo</string>
+    <string name="mostrar_men_lateral_de_apoyo">Mostrar menú lateral de apoyo</string>
+    <string name="permisos">Permisos</string>
+    <string name="permitir_descargar_catalogos_al_responsable_de_brigada">Permitir descargar catálogos</string>
+    <string name="permitir_descargar_rdenes_al_responsable_de_brigada">Permitir descargar rutas</string>
+    <string name="permitir_subir_rdenes_al_responsable_de_brigada">Permitir subir rutas capturadas </string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="todo">TODO</string>
+    <string name="comapa_derechos_res">IMERA Ordenes By Federal Atlantic ©</string>
+    <string name="formato_pendientes">Pendientes - %d</string>
+    <string name="formato_capturadas">Capturadas - %d</string>
+    <string name="no_tiene_permiso_descarga_ordenes">No tiene permiso para descargar Ordenes de trabajo, comuniquese con el Administrador</string>
+</resources>

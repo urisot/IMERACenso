@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragments.SubirRutasCapturadasFragment">
+
+    <View
+        android:id="@+id/puntomendio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp" />
+
+    <TextView
+        android:id="@+id/txt_subtitulo"
+        android:drawableStart="@drawable/ic_label_24"
+        android:drawablePadding="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Subir Rutas"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tvSeleccionaOT"
+        android:layout_below="@+id/txt_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Selecciona la ruta que desea subir"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        />
+
+
+    <Spinner
+        android:id="@+id/sp_RutasSubir"
+        android:layout_below="@+id/tvSeleccionaOT"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/llCantidades"
+        android:layout_below="@+id/sp_RutasSubir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_otPendientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_otCapturadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_otCanceladas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            />
+
+    </LinearLayout>
+
+    <View android:id="@+id/separador1"
+        android:layout_below="@+id/llCantidades"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+    <TextView
+        android:id="@+id/tvCap"
+        android:layout_below="@+id/separador1"
+        android:drawableStart="@drawable/ic_label_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Censista"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tvCapturistaDefault"
+        android:layout_below="@+id/tvCap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/primary_text"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/separador"
+        android:layout_below="@+id/tvCapturistaDefault"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_subtitulo1"
+        android:layout_below="@+id/separador"
+        android:drawableStart="@drawable/ic_label_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Que hacer despues de subir"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        />
+    <RadioGroup
+        android:id="@+id/rgOpciones"
+        android:layout_below="@+id/txt_subtitulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        >
+        <RadioButton
+            android:id="@+id/rb2EliminarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar datos"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rb3NoEliminarNada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hacer nada"
+
+            />
+    </RadioGroup>
+
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/rgOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sectionProgresoSubida"
+        android:layout_above="@+id/btn_Subir">
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:theme="@style/CircularProgress"
+            android:layout_centerInParent="true"
+            android:id="@+id/pb_estado_subida"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/img_upload"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_file_upload_24"
+            android:background="?android:attr/selectableItemBackground"
+
+            />
+        <TableLayout
+            android:layout_below="@+id/img_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                >
+                <TextView
+                    android:id="@+id/lblRegistrosSubidos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Registros subidos"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+
+                    />
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/txtRegistrosSubidos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:weightSum="10"
+                >
+                <TextView
+                    android:id="@+id/lblRegistrosNoSubidos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Registros que no se pudieron subir"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+
+                    />
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/txtRegistrosNoSubidos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_Subir"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Subir"/>
+
+</RelativeLayout>
